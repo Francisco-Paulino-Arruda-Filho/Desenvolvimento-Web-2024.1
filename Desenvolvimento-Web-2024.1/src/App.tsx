@@ -1,33 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import World from './components/atividade01/World'
+import * as PC from './components/atividade01/02MeuPC'
+import Pai from './components/atividade01/Questao01/01Pai'
+import * as Temperatura from './components/Atividade00/03Temperatura'
+import MeusDadosProps from './components/Atividade00/02MeusDados'
+import MeusDados from './components/Atividade00/01MeusDados'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <MeusDados/>
+      <MeusDadosProps nome="João" curso="Engenharia de Software" universidade={'UFC'}/>
+      {Temperatura.celsiusParaFahrenheit(100)}
+      <Pai/>
+      {PC.Memoria("Memória", 1200)}
+      {PC.PlacaDeVideo("Placa de Vídeo", 1000)}
+      {PC.PlacaMae("Placa Mãe", 1500)}
+      <World/>
     </>
   )
 }

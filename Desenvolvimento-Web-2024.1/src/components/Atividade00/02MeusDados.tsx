@@ -1,5 +1,5 @@
 /**
- * Nós somos a dupla que teve problam com versionamento do código e essa
+ * Nós somos a dupla que teve problema com versionamento do código e essa
  * é a questão que aminha dupla fez. João Pedro Pereira Holanda - 539012
  * https://github.com/Joao-Pedro-P-Holanda, gitHub dele e vou colocar ele como colaborador do repositório
   */

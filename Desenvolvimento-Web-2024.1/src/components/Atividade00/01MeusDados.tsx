@@ -1,17 +1,11 @@
-interface Props {
-    nome: string,
-    curso: string,
-    universidade: string
-}
-
-const MeusDadosProps = (props: Props) => {
+const MeusDados = () => {
     return (
         <>
-            <h2>Nome: {props.nome}</h2>
-            <h2>Curso: {props.curso}</h2>
-            <h2>Universidade: {props.universidade}</h2>
+            <h2>Nome: Francisco Paulino Arruda Filho</h2>
+            <h2>Curso: ES</h2>
+            <h2>Universidade: UFC</h2>
         </>
     )
 }
 
-export default MeusDadosProps
+export default MeusDados

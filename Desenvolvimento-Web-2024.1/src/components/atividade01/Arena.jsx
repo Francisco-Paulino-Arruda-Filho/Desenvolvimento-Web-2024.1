@@ -1,12 +1,18 @@
-import {Hero, Enemy} from './03Batalha'
-import sukuna from './sukuna.png'
-import satoru from './satoru.png'
+import React from "react"
 
-const Arena = () => {
+const Arena = ({children, arena}) => {
     return (
         <>
-            <Hero nome="Satoru Gojo" img={satoru}></Hero>
-            <Enemy nome="Sukuna" img={sukuna} ></Enemy>
+             <h1>Arena: {arena} </h1>
+             <h1>Lutadores</h1>
+            {
+                React.Children.map(
+                    children,
+                    (elemento) => {
+                        return React.cloneElement(elemento, {arena: arena})
+                    }
+                )
+            }
         </>
     )
 }

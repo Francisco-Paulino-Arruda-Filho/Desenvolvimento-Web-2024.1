@@ -6,7 +6,7 @@ import FunctionD from "./FunctionD";
 const FunctionA = () => {
     const cores = {
         bkgA: "green",
-        bkgB: "red",
+        bkgB: "white",
         bkgC: "yellow",
         bkgD: "blue",
     };

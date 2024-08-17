@@ -1,16 +1,18 @@
 import './App.css'
-import FunctionA from './components/Atividade02/FunctionA'
-import ComponenteAvo from './components/Atividade02/02Pokemon/ComponenteAvo'
-import ComponenteAvoDa3 from './components/Atividade02/Questao03/ComponenteAvo'
+import Questao01A from './components/AP1/Questao1'
+import Questao02 from './components/AP1/Questao2'
+import Questao03 from './components/AP1/Questao03.tsx'
+import Questao04 from './components/AP1/Questao04.tsx'
+import Questao04B from './components/AP1/Questao4B.tsx'
 
 function App() {
-  
-
   return (
     <>
-      <FunctionA/>
-      <ComponenteAvo/>
-      <ComponenteAvoDa3/>
+      <Questao01A/>
+      <Questao02/>
+      <Questao03/>
+      <Questao04/>  
+      <Questao04B/>
     </>
   )
 }
